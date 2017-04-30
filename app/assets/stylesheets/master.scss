@@ -1,2 +1,14 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+.navbar {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-brand {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+}
+
