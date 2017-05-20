@@ -58,3 +58,9 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
+#Use Simple_Form gem
+gem 'simple_form'
+#Use Devise gem
+gem 'devise'
+
+
