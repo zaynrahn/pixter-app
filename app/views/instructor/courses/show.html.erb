@@ -1,4 +1,32 @@
 <br/>
 <div class="booyah_box col-10 offset-1">
   <h3 class="text-center"><%= @course.title %></h3>
+  <br/>
+  <%= link_to 'Preview As a Student...', course_path(@course), class: 'btn btn-warning float-right' %>
+  <br class="clr" />
+  <br/>
+  <div class="text-center">
+    <%= link_to 'Create a New Section...', new_instructor_course_section_path(@course), class: 'btn btn-success btn-lg' %>
+  </div>
+
+  <br/>
+
+  <ul>
+    <%= @course.sections.each do |section| %>
+      <li>
+        <%= section.title %>
+        <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
+        <ul>
+          <% section.lessons.each do |lesson| %>
+            <li>
+              <b><%= lesson.title %></b>
+              -
+              <%= lesson.subtitle %>
+            </li>
+          <% end %>  
+        </ul>
+        <br class="clr" />
+      </li>
+    <% end %>
+  </ul>
 </div>
