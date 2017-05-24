@@ -62,5 +62,14 @@ end
 gem 'simple_form'
 #Use Devise gem
 gem 'devise'
+#Use CarrierWave gem
+gem 'carrierwave', '~> 1.0'
+#Use Figaro gem
+gem "figaro"
+#Use Fog gem to allow communication between carrierwave & AWS3
+gem "fog-aws"
+
+
+
 
 
