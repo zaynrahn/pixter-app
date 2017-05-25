@@ -68,8 +68,7 @@ gem 'carrierwave', '~> 1.0'
 gem "figaro"
 #Use Fog gem to allow communication between carrierwave & AWS3
 gem "fog-aws"
-
-
-
-
-
+#Use MiniMagick
+gem 'mini_magick', '~>4.3.1'
+#Use CarrierwaveAWS gem
+gem 'carrierwave-aws'
