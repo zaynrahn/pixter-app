@@ -72,3 +72,5 @@ gem "fog-aws"
 gem 'mini_magick', '~>4.3.1'
 #Use CarrierwaveAWS gem
 gem 'carrierwave-aws'
+#Use Stripe
+gem 'stripe'

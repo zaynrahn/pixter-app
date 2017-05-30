@@ -14,7 +14,8 @@
       </span>
       <br/>
       <br/>
-      <% if current_user == @course.user %>
+
+      <% if current_user && current_user == @course.user %>
         <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
       <% end %>
 
@@ -26,6 +27,15 @@
         <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary btn-large', method: :post %>
       <% end %>
 
+      <%= form_tag course_enrollments_path(@course) do %>
+    
+
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="A month's subscription"
+                data-amount="500"
+                data-locale="auto"></script>
+      <% end %>
     </div>
 
     <div class="col-sm-8 col-12">
