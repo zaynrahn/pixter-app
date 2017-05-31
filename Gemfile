@@ -74,3 +74,5 @@ gem 'mini_magick', '~>4.3.1'
 gem 'carrierwave-aws'
 #Use Stripe
 gem 'stripe'
+#Use Ranked-Model gem
+gem 'ranked-model'
