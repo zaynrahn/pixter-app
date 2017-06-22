@@ -78,4 +78,7 @@ gem 'stripe'
 gem 'ranked-model'
 #Use jQuery UI gem
 gem 'jquery-ui-rails'
+#Use Font Awesome gem
+gem "font-awesome-rails"
+
 
